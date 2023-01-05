@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+.map-container {
+  display: flex;
+  
+}
+
+#container {
+    width: 500px;
+    min-height: 600px;
+    float: left;
+    margin: 15px 35px;
+}
+
+#container2 {
+    width: 600px;
+    min-height: 600px;
+    float: right;
+    margin: 15px 35px;
+}
+
+#states path {
+    fill: #ebf0f4;
+    stroke: #CAD7E0;
+    stroke-width: 1.2px;
+}
+
+#states path:hover {
+    fill: #CAD7E0;
+}
+
+#states .active {
+    fill: #CAD7E0;
+}
+
+#states .activeDetail {
+    fill: #00b700;
+}
+
+#states path {
+    cursor: pointer;
+}
+
+#states text {
+    cursor: pointer;
+    font-size: 11px;
+    fill: #333;
+}
+
+svg text {
+  pointer-events: none;
+}
+svg .municipality {
+  fill: #efefef;
+  stroke: #fff;
+}
+svg .municipality-label {
+  fill: #bbb;
+  font-size: 12px;
+  font-weight: 300;
+  text-anchor: middle;
+}
+svg #map text {
+  color: #333;
+  font-size: 10px;
+  text-anchor: middle;
+}
+ 
+.d3-tooltip {
+  visibility: hidden;
+  position: absolute;
+  z-index: 10;
+  font-size: 11px;
+  
+}
